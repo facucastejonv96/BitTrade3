@@ -1,0 +1,21 @@
+.post{
+  background-color: rgb(225, 191, 119);
+  margin-top: 10px;
+  padding: 5px;
+  position: relative;
+  font-size: 14px;
+  min-height: 80px;
+}
+.openchat{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.mychats{
+  background-color: rgb(170, 210, 108);
+  margin-top: 10px;
+  padding: 5px;
+  position: relative;
+  font-size: 14px;
+  min-height: 80px;
+}

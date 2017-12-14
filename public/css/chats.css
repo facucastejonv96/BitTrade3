@@ -1,0 +1,19 @@
+.greeting{
+  text-align: center;
+}
+#chat-window{
+  height: 400px;
+  overflow: scroll;
+}
+
+.mymsg{
+  margin-top:1px;
+  text-align: right;
+}
+.hismsg{
+  margin-top:1px;
+  text-align: left;
+}
+.postform{
+  text-align: center;
+}
