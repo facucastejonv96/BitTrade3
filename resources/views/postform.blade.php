@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="{{asset('js/checkanuncio.js')}}" charset="utf-8"></script>
   <div class="col-lg-6 col-lg-offset-3">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -19,8 +20,8 @@
             <option value="buy">Compra</option>
             <option value="sell">Venta</option>
           </select><br>
-          <label for="amount">Cantidad:</label>
-          <input type="text" name="amount" value="">
+          <label for="amount" >Cantidad:</label>
+          <input type="text" id="amount" name="amount" value="">
           <select name="currency">
             <option value="USD">USD</option>
             <option value="ARS">ARS</option>
@@ -35,7 +36,7 @@
             <option value="+ ">+</option>
             <option value="- ">-</option>
           </select>
-          <input type="text" name="comission" value="">%<br>
+          <input type="text" name="comission" id="comission" value="">%<br>
           <label for="fraction">Acepta comprar/vender por menor volumen?</label>
           <select name="fraction">
             <option value="1">Si</option>

@@ -1,13 +1,21 @@
 window.onload = function(){
-  window.getElementById("min").addEventListener("change", check);
-  window.getElementById("max").addEventListener("change", check);
-  debugger;
+  document.getElementById("min").addEventListener("change", check1);
+  document.getElementById("max").addEventListener("change", check2);
 };
 
-  function check(event){
-  var regex = /^\s*\d*\s*$/;
-  if(!regex.test(window.getElementById("min"))){
-    debugger;
-    window.getElementById("min").style.border = "1px solid red";
+  function check1(event){
+  var regex = /^\s*\d*\s*$/
+  if(!regex.test(document.getElementById("min").value)){
+    document.getElementById("min").style.border = "1px solid red";
+  }else{
+    document.getElementById("min").style.border = "1px solid black";
   }
+}
+function check2(event){
+var regex = /^\s*\d*\s*$/
+if(!regex.test(document.getElementById("max").value)){
+  document.getElementById("max").style.border = "1px solid red";
+}else{
+  document.getElementById("max").style.border = "1px solid black";
+}
 }

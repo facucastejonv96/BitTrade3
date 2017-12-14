@@ -5,7 +5,7 @@
 <?php
   $mypost = $post[0];
 ?>
-
+<script src="{{asset('js/checkanuncio.js')}}" charset="utf-8"></script>
 <div class="col-lg-6 col-lg-offset-3">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -21,7 +21,7 @@
           <option value="sell">Venta</option>
         </select><br>
         <label for="amount">Cantidad:</label>
-        <input type="text" name="amount" value="{{$mypost->amount}}">
+        <input type="text" id="amount" name="amount" value="{{$mypost->amount}}">
         <select name="currency" id="currency">
           <option value="USD">USD</option>
           <option value="ARS">ARS</option>
